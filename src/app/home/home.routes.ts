@@ -4,5 +4,15 @@ import { HomeComponent } from './home.component';
 
 export const homeRoutes: Routes = [{
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    children: [{
+        path: 'api',
+        loadChildren: '../api/api.module#ApiModule'
+    }, {
+        path: 'docs',
+        loadChildren: '../doc/doc.module#DocModule'
+    }, {
+        path: 'mock',
+        loadChildren: '../mock/mock.module#MockModule'
+    }]
 }];

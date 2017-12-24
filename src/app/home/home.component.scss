@@ -1,0 +1,95 @@
+header {
+  background-color: #20272a;
+  display: block;
+  padding: 0;
+  height: 70px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9997;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
+}
+
+header .os-logo {
+  margin: 15px 30px 0;
+  display: block;
+  float: left;
+  img {
+    height: 42px;
+  }
+}
+
+header .os-menu,
+header .os-settings {
+  list-style-type: none;
+  float: left;
+  margin: 0 60px 0 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    height: 100%;
+    outline: none;
+    a {
+      text-decoration: none;
+      color: #fff;
+      transition: background-color .3s;
+      min-width: 120px;
+      text-align: center;
+      box-sizing: border-box;
+      line-height: 70px;
+      display: inline-block;
+      height: 100%;
+      &:hover {
+        background-color: #4a4f52;
+      }
+    }
+  }
+}
+.active {
+  background-color: #4a4f52;
+}
+
+header .os-settings {
+  float: right;
+  position: relative;
+  .os-dropdown-menu {
+    position: absolute;
+    top: 65px;
+    left: -50px;
+    width: 200px;
+    max-height: 300px;
+    padding:15px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+    overflow: auto;
+    list-style-type: none;
+    margin: 0;
+    border-radius: 3px;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    li{
+      width: 100%;
+      outline: none;
+      a {
+        text-decoration: none;
+        color: #404c51;
+        padding: 6px 12px;
+        line-height: 40px;
+        display: block;
+        transition: all .5s ease;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.container{
+  padding: 65px 15px 0;
+  height: 100%;
+}
+

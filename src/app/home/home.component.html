@@ -1,3 +1,20 @@
-<p>
-  home works!
-</p>
+<header>
+  <a class="os-logo">
+    <img src="assets/angular.svg"/>
+  </a>
+  <ul class="os-menu">
+    <li routerLink="/api" routerLinkActive="active"><a>API管理</a></li>
+    <li routerLink="/docs" routerLinkActive="active"><a>文档</a></li>
+    <li routerLink="/mock" routerLinkActive="active"><a>Mock数据</a></li>
+  </ul>
+  <ul class="os-settings">
+    <li (mouseenter)="show = !show" (mouseleave)="show = !show"><a>管理员</a>
+      <ul class="os-dropdown-menu" *ngIf="show">
+        <li><a>退出登录</a></li>
+      </ul>
+    </li>
+  </ul>
+</header>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
