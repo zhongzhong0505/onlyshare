@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
@@ -12,7 +14,9 @@ import { appRoutes } from './app.routes';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgZorroAntdModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

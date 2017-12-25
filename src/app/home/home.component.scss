@@ -10,6 +10,7 @@ header {
   width: 100%;
   z-index: 9997;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
+  font-size: 14px;
 }
 
 header .os-logo {
@@ -88,8 +89,13 @@ header .os-settings {
     }
   }
 }
-.container{
-  padding: 65px 15px 0;
+.os-container{
+  padding: 80px 15px 10px;
   height: 100%;
+  background: #e9e9e9;
+  .os-content{
+    background: #ffffff;
+    height: 100%;
+  }
 }
 

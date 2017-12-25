@@ -1,3 +1,46 @@
-<div>
+<div class="api-module">
+    <div class="api-menu">
+        <ul nz-menu [nzMode]="'inline'">
+            <li nz-submenu>
+              <span title><i class="anticon anticon-mail"></i>接口分类</span>
+              <ul>
+                <li nz-menu-group>
+                  <span title>用户模块</span>
+                  <ul>
+                    <li nz-menu-item>对外公开接口</li>
+                    <li nz-menu-item>内部接口</li>
+                  </ul>
+                </li>
+                <li nz-menu-group>
+                  <span title>全新模块</span>
+                  <ul>
+                    <li nz-menu-item>Option 3</li>
+                    <li nz-menu-item>Option 4</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+    <div class="api-container">
+        <div>
+            <nz-breadcrumb>
+                <nz-breadcrumb-item>
+                  Home
+                </nz-breadcrumb-item>
+                <nz-breadcrumb-item>
+                  <a href="">Application Center</a>
+                </nz-breadcrumb-item>
+                <nz-breadcrumb-item>
+                  <a href="">Application List</a>
+                </nz-breadcrumb-item>
+                <nz-breadcrumb-item>
+                  An Application
+                </nz-breadcrumb-item>
+              </nz-breadcrumb>
+        </div>
+        <div class="api-content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>
-<router-outlet></router-outlet>
