@@ -1,21 +1,16 @@
 <div class="api-module">
     <div class="api-menu">
         <ul nz-menu [nzMode]="'inline'">
-            <li nz-submenu>
+            <li nz-submenu [nzOpen]="'true'">
               <span title><i class="anticon anticon-mail"></i>接口分类</span>
               <ul>
-                <li nz-menu-group>
-                  <span title>用户模块</span>
+                <li nz-menu-item>对外公开接口</li>
+                <li nz-menu-item>内部接口</li>
+                <li nz-submenu>
+                  <span title>公开文档</span>
                   <ul>
-                    <li nz-menu-item>对外公开接口</li>
-                    <li nz-menu-item>内部接口</li>
-                  </ul>
-                </li>
-                <li nz-menu-group>
-                  <span title>全新模块</span>
-                  <ul>
-                    <li nz-menu-item>Option 3</li>
-                    <li nz-menu-item>Option 4</li>
+                      <li nz-menu-item>对外公开接口</li>
+                      <li nz-menu-item>内部接口</li>
                   </ul>
                 </li>
               </ul>
@@ -23,19 +18,19 @@
           </ul>
     </div>
     <div class="api-container">
-        <div>
+        <div class="api-breadcrumb">
             <nz-breadcrumb>
                 <nz-breadcrumb-item>
-                  Home
+                  API管理
                 </nz-breadcrumb-item>
                 <nz-breadcrumb-item>
-                  <a href="">Application Center</a>
+                  <a href="">接口分类</a>
                 </nz-breadcrumb-item>
                 <nz-breadcrumb-item>
-                  <a href="">Application List</a>
+                  <a href="">用户模块</a>
                 </nz-breadcrumb-item>
                 <nz-breadcrumb-item>
-                  An Application
+                  对外公开接口
                 </nz-breadcrumb-item>
               </nz-breadcrumb>
         </div>

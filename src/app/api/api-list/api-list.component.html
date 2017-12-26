@@ -1,3 +1,11 @@
+<div class="tool-bar">
+    <button nz-button [nzType]="'primary'">
+        <span>添加</span>
+    </button>
+    <button nz-button [nzType]="'danger'">
+        <span>删除</span>
+    </button>
+</div>
 <nz-table class="api-list" #nzTable [nzDataSource]="data" [nzPageSize]="10" (nzDataChange)="_displayDataChange($event)" (nzPageIndexChange)="_refreshStatus()" (nzPageSizeChange)="_refreshStatus()">
     <thead nz-thead>
       <tr>
@@ -5,9 +13,10 @@
           <label nz-checkbox [(ngModel)]="_allChecked" [nzIndeterminate]="_indeterminate" (ngModelChange)="_checkAll($event)">
           </label>
         </th>
-        <th nz-th><span>Name</span></th>
-        <th nz-th><span>Age</span></th>
-        <th nz-th><span>Address</span></th>
+        <th nz-th><span>接口名称</span></th>
+        <th nz-th><span>URL</span></th>
+        <th nz-th><span>分组</span></th>
+        <th nz-th><span>操作</span></th>
       </tr>
     </thead>
     <tbody nz-tbody>
@@ -21,6 +30,10 @@
         </td>
         <td nz-td>{{data.age}}</td>
         <td nz-td>{{data.address}}</td>
+        <td nz-td>
+          <a>查看文档</a>
+          <a>测试用例</a>
+        </td>
       </tr>
     </tbody>
   </nz-table>

@@ -8,15 +8,18 @@
 }
 .api-container{
   flex: 1;
-  background: #e9e9e9;
-  height: 100%;
-  padding-left:20px;
   .api-content{
-    height: 100%;
     background: #ffffff;
+  }
+  .api-breadcrumb{
+    padding: 10px 5px;
   }
 }
 .api-menu{
   width: 240px;
   padding-right: 10px;
+  background: #e9e9e9;
+  ul{
+    min-height: 100%;
+  }
 }
